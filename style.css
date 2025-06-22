@@ -1,0 +1,60 @@
+body{
+    background-color: #212121; color: #fff;
+}
+
+h1{
+    background-color: black;
+}
+
+#submit{
+    background-color: black;
+    color: #fff;
+    font-size: 20px;
+    width: 200px;
+    height: 50px;
+    border-radius: 25px;
+    margin-top: 50px;
+    border-style: none;
+}
+
+#guessField{
+    color: black;
+    text-align: center;
+    width: 250px;
+    height: 50px;
+    font-size: 30px;
+    border-style: none;
+    margin-top: 25px;
+    border-radius: 10px;
+    border: 5px solid #6c6d6d;
+}
+
+#wrapper{
+    text-align: center;
+    box-sizing: border-box;
+    /* background-color: #474747; */
+    /* width: 450px;
+    height: 550px;*/
+    font-size: 25px;
+}
+
+.guesses{
+    margin-top: 100px;
+    padding: 7px;
+}
+
+.lastResult{
+    /* margin-top: 100px; */
+    padding: 7px;
+}
+
+p {
+  font-size: 16px;
+}
+
+#guess{
+    font-size: 40px;
+    margin-top: 120px;
+}
+
+
