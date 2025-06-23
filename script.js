@@ -30,10 +30,10 @@ function ValidateGuess(guess){
     }else if (guess <  1) {
         alert('Please enter a number more than 1')
     }else if (guess > 100) {
-        alert('Please enter a number less than 1')
+        alert('Please enter a number less than 100')
     }else{
         prevGues.push(guess);
-        if (numGuess === 11) {
+        if (numGuess === 10) {
             displayGuess(guess);
             displayMessage(`Game Over. Random number was ${randomNumber}`);
             endGame();
@@ -68,10 +68,10 @@ function displayMessage(message){
 
 function endGame(){
     UserInput.innerHTML = '';
-    UserInput.setAttribute('disable','')
+    UserInput.setAttribute('disabled','');
     p.classList.add('button');
     p.innerHTML = '<h2 id="newGame">Start New Game</h2>'
-    StartOver.appendChild('p');
+    StartOver.appendChild(p);
     playGame = false;
     newGame();
 }
@@ -84,8 +84,8 @@ function newGame(){
         numGuess = 1;
         GuessSlot.innerHTML = '';
         Remaining.innerHTML = `${11-numGuess}`;
-        UserInput.removeAttribute('disable');
-        StartOver.removeChild('p');
+        UserInput.removeAttribute('disabled');
+        StartOver.removeChild(p);
         playGame = true;
     });
 }
